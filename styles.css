@@ -249,7 +249,7 @@ p {
 }
 
 .hero::before {
-    background: url('./Static/1.jpg') center/cover no-repeat;
+    background: url('/KonstantKreative/Static/1.jpg') center/cover no-repeat;
     filter: blur(8px);
     transform: scale(1.12);
 }
