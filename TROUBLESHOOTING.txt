@@ -1,0 +1,135 @@
+🐛 TROUBLESHOOTING GUIDE
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+ISSUE: Images still disappearing when scrolling
+
+SOLUTION 1: Hard Refresh Browser Cache
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Step 1: Open index.html
+Step 2: Press Ctrl+Shift+R (Windows/Linux) or Cmd+Shift+R (Mac)
+Step 3: Wait for page to reload completely
+Step 4: Scroll and test images
+
+SOLUTION 2: Clear Browser Cache Completely
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Step 1: Open index.html
+Step 2: Press F12 to open Developer Tools
+Step 3: Find Network tab
+Step 4: Check "Disable cache" checkbox
+Step 5: Refresh page
+Step 6: Scroll and test
+
+SOLUTION 3: Try Different Browser
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Chrome (Recommended):
+• Download from google.com/chrome
+• Open index.html
+• Test scrolling
+
+Firefox:
+• Download from mozilla.org
+• Open index.html
+• Test scrolling
+
+Safari (Mac):
+• Already installed
+• Open index.html
+• Test scrolling
+
+SOLUTION 4: Check File Paths
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Step 1: Open index.html in text editor
+Step 2: Look for all <img> tags
+Step 3: Verify src paths:
+   ✓ src="Static/1.jpg" - correct
+   ✓ src="Static/3.png" - correct
+   ✓ src="Static/4.png" - correct
+   ✓ src="Static/5.jpg" - correct
+   ✓ src="Static/6.png" - correct
+
+SOLUTION 5: Check Console for Errors
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Step 1: Open index.html
+Step 2: Press F12 to open Developer Tools
+Step 3: Click "Console" tab
+Step 4: Look for red error messages
+Step 5: If you see errors, screenshot and send
+
+SOLUTION 6: Test with Simple HTML File
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Create a simple test file:
+
+<html>
+<body style="margin: 0; padding: 20px;">
+  <h1>Test 1: Hero</h1>
+  <img src="Static/1.jpg" style="width: 100%; max-width: 600px; margin: 50px 0;">
+  <h1>Test 2: Solution</h1>
+  <img src="Static/3.png" style="width: 100%; max-width: 600px; margin: 50px 0;">
+  <h1>Test 3: Features</h1>
+  <img src="Static/4.png" style="width: 100%; max-width: 600px; margin: 50px 0;">
+  <h1>Test 4: Testimonials</h1>
+  <img src="Static/5.jpg" style="width: 100%; max-width: 600px; margin: 50px 0;">
+  <h1>Test 5: CTA</h1>
+  <img src="Static/6.png" style="width: 100%; max-width: 600px; margin: 50px 0;">
+</body>
+</html>
+
+Save as "test.html" and open it.
+Scroll to see if images appear.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+VERIFICATION CHECKLIST:
+
+Files Check:
+☐ index.html exists in /Konstant/
+☐ styles.css exists in /Konstant/
+☐ script.js exists in /Konstant/
+☐ Static/ folder exists with 5 images
+
+CSS Check:
+☐ No "overflow-x: hidden" in styles.css
+☐ All images have "overflow: visible"
+☐ Only 2 z-index entries (navbar, modal)
+
+HTML Check:
+☐ All img src paths point to Static/
+☐ All alt text is present
+☐ Hero image has loading="eager"
+
+Browser Check:
+☐ Browser is updated to latest version
+☐ JavaScript is enabled
+☐ Cache is cleared
+☐ Page refreshed with hard reload
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+COMMON ISSUES & FIXES:
+
+Issue: "Failed to load image" error in console
+Fix: Check image file names in Static/ folder match exactly
+
+Issue: Images load but with delay
+Fix: Optimize image files (compress JPG/PNG)
+
+Issue: Only some images disappear
+Fix: Check individual image file sizes
+
+Issue: Images look stretched/distorted
+Fix: Check HTML markup for width/height restrictions
+
+Issue: Page is slow
+Fix: Reduce image file sizes using online tools
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+STILL NOT WORKING?
+
+1. Send screenshot showing the issue
+2. Open Console (F12) and screenshot any errors
+3. Let me know which browser and OS you're using
+4. Tell me which image(s) are disappearing
+
+I can provide additional fixes if needed!
